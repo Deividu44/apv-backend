@@ -18,7 +18,7 @@ const emailRegistro = async (datos) => {
     text: 'Confirma tu cuenta en APV',
     html: `<p>Hola ${nombre}, comprueba tu cuenta en APV</p>
         <p>Debes confirmar la cuenta, solo debes ir al enlace:</p>
-        <a href="${process.env.URL_FRONTEND}/confirmar/${token}">Confirmar cuenta</a>
+        <a href="${process.env.FRONTEND_URL}/confirmar/${token}">Confirmar cuenta</a>
         <p>Si tu no creaste esta cuenta, puede ignorar este mensaje</p>`
   })
   console.log('Mensaje enviado: %s', info.messageId)

@@ -17,7 +17,7 @@ const emailOlvidePassword = async (datos) => {
     subject: 'Restablecer contraseña',
     text: 'Restablecer contraseña en APV',
     html: `<p>Hola ${nombre}, has solicitado restablecer tu contraseña</p>
-           <a href='${process.env.URL_FRONTEND}/olvide-password/${token}'>
+           <a href='${process.env.FRONTEND_URL}/olvide-password/${token}'>
            Restablecer contraseña</a>`
   })
   console.log('Mensaje enviado: %s', info.messageId)
